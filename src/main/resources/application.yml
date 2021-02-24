@@ -1,0 +1,10 @@
+giphy:
+  api: api.giphy.com
+  path:
+    trending_gifs: v1/gifs/trending
+    trending_stickers: v1/stickers/trending
+    search_gifs: v1/gifs/search
+    search_stickers: v1/stickers/search
+  key: RqABPKYmkEdYFBhIVVfm5IPCy4EklYXF
+   
+  
