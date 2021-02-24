@@ -25,11 +25,6 @@ class GiphyController {
 	public String getAllSearchGiphy(@RequestParam("offset") int offset, @RequestParam("q") String searchString) {
 		return giphyService.getSearchedForGiphy(searchString, offset);
 	}
-	
-	@GetMapping(path = "/stickers/trending")
-	public String getAllTrendingStickers(@RequestParam("offset") int offset) {
-		return giphyService.getAllTrendingGiphy(offset);
-	}
 
 	@GetMapping(path = "/stickers/search")
 	public String getAllSearchStickers(@RequestParam("offset") int offset, @RequestParam("q") String searchString) {

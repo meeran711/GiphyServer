@@ -17,11 +17,6 @@ public class GiphyService {
 				+ "?api_key=" + giphyConfig.getApiKey() + "&limit=20&offset=" + offset, String.class);
 	}
 
-	public String getAllTrendingStickers(int offset) {
-		return restTemplate.getForObject("http://" + giphyConfig.getGiphyApi() + "/" + giphyConfig.getTrendingStickers()
-				+ "?api_key=" + giphyConfig.getApiKey() + "&limit=20&offset=" + offset, String.class);
-	}
-
 	public String getSearchedForGiphy(String q, int offset) {
 		return restTemplate.getForObject("http://" + giphyConfig.getGiphyApi() + "/" + giphyConfig.getSearchGifs()
 				+ "?api_key=" + giphyConfig.getApiKey() + "&limit=20&offset=" + offset + "&q=" + q, String.class);
